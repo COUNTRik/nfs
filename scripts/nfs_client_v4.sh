@@ -11,4 +11,4 @@ yum install nfs-utils -y
 mkdir /mnt/upload 
 
 # Монтируем сетевую парку в папку nfs
-mount -t nfs -o vers=3 192.168.50.10:/upload /mnt/upload
+mount -t nfs 192.168.50.10:/upload /mnt/upload
