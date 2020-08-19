@@ -28,7 +28,7 @@ firewall-cmd --permanent --add-service=mountd
 firewall-cmd --reload
 
 # Добавляем путь к папке, ip и параметры в exports для нашей сетевой папки
-echo "/upload 192.168.50.10/24(rw,sync)" > /etc/exports
+echo "/upload 192.168.50.10/24(rw,sync)" >> /etc/exports
 
 # Применяем новые настройки для nfs
 exportfs -a
